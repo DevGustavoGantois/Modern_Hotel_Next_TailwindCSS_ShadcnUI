@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 999px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #85c7dc;
+  border-radius: 10px;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-body text-grey leading-8;
+  }
+
+  h1, h2, h3, h4, h5 ,h6 {
+    @apply text-black font-bold
+  }
+
+  .h2 {
+    @apply text-[32px];
+  }
+
+  .h3 {
+    @apply text-2xl;
+  }
+
+  .h4 {
+    @apply text-xl;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: white;
+}
